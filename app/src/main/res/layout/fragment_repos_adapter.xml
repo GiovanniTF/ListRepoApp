@@ -62,10 +62,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="@dimen/dimen_10_sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toEndOf="@+id/txtStars"
             app:layout_constraintTop_toBottomOf="@+id/txtLoginRepo"
+            app:layout_constraintVertical_bias="1.0"
             tools:text="@sample/repository.json/items/full_name" />
 
         <TextView
@@ -73,12 +75,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/yellow_color"
-            android:textStyle="bold"
             android:textSize="@dimen/dimen_16_sp"
+            android:textStyle="bold"
             app:drawableLeftCompat="@drawable/ic_branch_yellow"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="@+id/txtDescriptionRepo"
             app:layout_constraintTop_toBottomOf="@+id/txtDescriptionRepo"
+            app:layout_constraintVertical_bias="1.0"
             tools:text="@sample/repository.json/items/forks_count" />
 
         <TextView
@@ -87,12 +90,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:textColor="@color/yellow_color"
+            android:textSize="@dimen/dimen_16_sp"
             android:textStyle="bold"
             app:drawableLeftCompat="@drawable/ic_star_yellow"
-            android:textSize="@dimen/dimen_16_sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/txtForks"
             app:layout_constraintTop_toBottomOf="@+id/txtDescriptionRepo"
+            app:layout_constraintVertical_bias="1.0"
             tools:text="@sample/repository.json/items/stargazers_count" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
